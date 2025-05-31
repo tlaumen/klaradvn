@@ -30,7 +30,6 @@ def test_generate_tests_class():
     class_ = "CoolNewList"
     result = extract_class(PATH_PACKAGE, class_)
     success, test_path = generate_tests(Path(result['file_path']), result['source_code'], class_)
-    print(test_path)
     try:
         if success:
             subprocess.run([f"pytest {test_path} --noconftest"], shell=True)

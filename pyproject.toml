@@ -11,6 +11,8 @@ ollama = "^0.4.8"
 typer = "^0.15.3"
 pytest = "^8.3.5"
 
+[tool.poetry.scripts]
+klara = "klaradvn.cli:app"
 
 [build-system]
 requires = ["poetry-core"]
