@@ -14,6 +14,9 @@ pytest = "^8.3.5"
 [tool.poetry.scripts]
 klara = "klaradvn.cli:app"
 
+[project.scripts]
+klara = "klaradvn.cli:app"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
