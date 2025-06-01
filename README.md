@@ -5,8 +5,12 @@ The library is a wrapper around ollama and aims to automate writing unit tests f
 
 ## Installation
 
-The package is still under active development and not yet published on the PyPI
+### Use
+Install it in your development enviroment using pip: `pip install klaradvn`, with uv using: `uv add klaradvn` or with poetry using: `poetry add klaradvn`.
 
+Install it in uvx using: `uvx install klaradvn`
+
+### Development
 To run to code under development. Clone the repository to your local computer, navigate to the top level folder of the repo and install with poetry.
 
 ```bash
@@ -15,6 +19,15 @@ poetry install
 
 ## Usage
 
+## Install OLLAMA
+The klaravdn package depends on ollama. To install OLLAMA, follow this guide: https://markaicode.com/ollama-setup-guide-run-llms-locally/
+
+### CLI
+Simply run `klara <command>`. For more information on all commands, run `klara --help`. 
+
+Please make sure you first create the model with the command: `klara create-model`
+
+### Python
 ```python
 from klaradvn.generate import create_model, generate_tests
 from klaradvn.extract import extract_function_code
@@ -49,4 +62,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[LGPL](https://choosealicense.com/licenses/lgpl-3.0/)
